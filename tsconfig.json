@@ -1,0 +1,50 @@
+{
+	"compilerOptions": {
+		// Type Checking
+		"strict": true,
+		"exactOptionalPropertyTypes": true,
+		"noImplicitReturns": true,
+		"noImplicitOverride": true,
+		"noPropertyAccessFromIndexSignature": true,
+		"useUnknownInCatchVariables": true,
+
+		// Modules
+		"rootDir": "./src/ts",
+		"paths": {
+			"bale/*": [ "./src/ts/*" ]
+		},
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		"types": [ "node" ],
+
+		// Language and Environment
+		"lib": ["ESNext" ],
+		"target": "ESNext",
+
+		// Emit
+		"outDir": "./target/js",
+		"noEmitOnError": true,
+		// "declaration": true,
+		// "declarationMap": true,
+		"sourceMap": true,
+		// "inlineSources": true,
+
+		// Interop Constraints
+		"esModuleInterop": true,
+		"isolatedModules": true,
+		"forceConsistentCasingInFileNames": true,
+
+		// Projects
+		"incremental": true,
+		"tsBuildInfoFile": "./target/tsconfig.tsbuildinfo",
+
+		// Output Formatting
+		"pretty": true
+	},
+	"include": [
+		"./src/ts/**/*"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}

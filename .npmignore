@@ -1,0 +1,19 @@
+# temp files
+.DS_Store
+*~
+.~lock*
+
+# node
+node_modules/
+
+# yarn
+yarn-error.log
+
+# build
+target/
+# /bin/
+
+# ide
+.idea
+*.iml
+*.marks
